@@ -1,6 +1,7 @@
-# fee-management-system
+## fee-management-system
 🧑‍🎓 Student fee management system of an institution
-Website link: 
+Website link: https://angshul004.github.io/fee-management-system/
+
 Screenshots:
 ![Screenshot 2024-11-20 204639](https://github.com/user-attachments/assets/fe753ebf-8ab2-4d11-847d-ae1cbf978eae)
 ![Screenshot 2024-11-20 204651](https://github.com/user-attachments/assets/2a1772a0-01fa-4aa3-b723-433cec344379)

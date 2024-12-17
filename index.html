@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Fee Management - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titlebar">
+        <h1>Student Fee Management system</h1>
+    </div>
+    <!-- login -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="reg-no">Registration Number:</label>
+            <input type="text" id="reg-no" name="reg-no" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p>New Student? <a href="register.html">Register Here→</a></p>
+        <br>
+    </div>
+
+    <!-- Admin Button -->
+    <div class="admin-button">
+        <button onclick="checkAdminPassword()">Admin</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

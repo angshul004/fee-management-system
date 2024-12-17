@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Receipt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bill-container">
+        <h1>Student Payment Management System</h1>
+        <h2>Payment Receipt</h2>
+        <hr>
+        <div class="bill-details">
+            <p><strong>Name:</strong> <span id="student-name"></span></p>
+            <p><strong>Registration No:</strong> <span id="reg-no"></span></p>
+            <p><strong>Date:</strong> <span id="payment-date"></span></p>
+            <p><strong>Semester fees:</strong> ₹<span id="semester-fee">0.00</span></p>
+            <p><strong>Exam fees:</strong> ₹<span id="exam-fee">0.00</span></p>
+            <p><strong>Payment mode:</strong> Online</p>
+            <p class="total-amount"><strong>Amount Paid:</strong> ₹<span id="amount-paid">0.00</span></p>
+        </div>
+        <button class="print-btn" onclick="window.print();">Print</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

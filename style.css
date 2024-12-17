@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-color:rgb(255, 255, 245);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('uem_indexbg.jpeg') center/cover no-repeat;
+    background-attachment: fixed;
+    opacity: 0;
+    animation: fadeInBg 0.5s ease-in forwards;
+    z-index: -1;
+}
+
+@keyframes fadeInBg {
+    to {
+        opacity: 0.3;
+    }
+}
+
+
+.titlebar {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+h1 {
+    font-family: "Jost", sans-serif;
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+}
+
+.admin-container h1 {
+    padding-bottom: 20px;
+}
+
+/* all container style */
+.login-container, .register-container, .dashboard-container, .bill-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 235px;
+    width: 100%;
+    margin: auto;
+}
+
+h2 {
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* all Button style */
+button {
+    padding: 10px;
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Home button */
+.home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+}
+
+.home-button button {
+    width: auto;
+    padding: 10px 15px;
+}
+
+/* Admin button */
+.admin-button {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+.admin-button button {
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 10px 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.admin-button button:hover {
+    color: white;
+    background-color: #0056b3;
+}
+
+/* Admin table */
+.admin-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+/* bill page */
+.bill-container{
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.total-amount{
+    text-align: right;
+}

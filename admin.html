@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titlebar">
+        <h1>Admin dashboard</h1>
+    </div>
+    <div class="home-button">
+        <button onclick="location.href='index.html'">Home</button>
+    </div>
+
+    <div class="admin-container">
+        <h2>Admin - Payment details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Registration No.</th>
+                    <th>Fee Payment Status</th>
+                </tr>
+            </thead>
+            <tbody id="student-list">
+                <!-- List of students -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

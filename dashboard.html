@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titlebar">
+        <h1>Fee payment dashboard</h1>
+    </div>
+    <div class="home-button">
+        <button onclick="location.href='index.html'">Home</button>
+    </div>
+
+    <div class="dashboard-container">
+        <h1>Welcome, <span id="student-name">Student</span></h1>
+        <input type="hidden" id="reg-no"> 
+        <hr>
+        <div class="dashboard-content">
+            <h2>Exam fee payment</h2>
+            <div class="pay-container">
+                <button id="pay-fee">Pay ₹1200</button>
+            </div>
+            <h2>Semester fee payment</h2>
+            <div class="sem-pay-container">
+                <button id="sem-pay-fee">Pay ₹85000</button>
+            </div>           
+
+            <h2>Payment History</h2>
+            <ul id="payment-history"></ul>
+
+            <h2>Payment Status</h2>
+            <p id="payment-status">Your payment status will be displayed here.</p>
+        </div>
+
+        <!-- Logout Button -->
+        <div class="logout-button">
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
